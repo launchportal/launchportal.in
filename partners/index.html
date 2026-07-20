@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LaunchPortal.in partners with India's top real estate developers including M3M, DLF, Godrej Properties, Elan Group, Signature Global, and Ganga Realty. Zero brokerage for buyers." />
+  <meta property="og:title" content="Our Builder Partners | LaunchPortal.in" />
+  <meta property="og:description" content="LaunchPortal.in partners with India's top real estate developers. Zero brokerage for buyers." />
+  <meta property="og:url" content="https://launchportal.in/partners/" />
+  <link rel="canonical" href="https://launchportal.in/partners/" />
+  <title>Our Builder Partners | LaunchPortal.in</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LaunchPortal.in",
+    "url": "https://launchportal.in",
+    "telephone": "+918377033060",
+    "knows": [
+      { "@type": "Organization", "name": "M3M India", "url": "https://launchportal.in/m3m/" },
+      { "@type": "Organization", "name": "DLF Ltd", "url": "https://launchportal.in/dlf/" },
+      { "@type": "Organization", "name": "Godrej Properties", "url": "https://launchportal.in/godrej/" },
+      { "@type": "Organization", "name": "Elan Group", "url": "https://launchportal.in/elan/" },
+      { "@type": "Organization", "name": "Signature Global", "url": "https://launchportal.in/signatureglobal/" },
+      { "@type": "Organization", "name": "Ganga Realty", "url": "https://launchportal.in/gangarealty/" }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #0f172a;
+      --accent: #f59e0b;
+      --accent-light: #fef3c7;
+      --green: #25D366;
+      --text: #1e293b;
+      --muted: #64748b;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --border: #e2e8f0;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      padding: 140px 24px 80px;
+      text-align: center;
+      background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(245,158,11,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(245,158,11,0.15);
+      border: 1px solid rgba(245,158,11,0.4);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 780px;
+      margin: 0 auto 20px;
+      letter-spacing: -1px;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.75);
+      max-width: 620px;
+      margin: 0 auto 40px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat strong {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .hero-stat span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* BREADCRUMB */
+    .breadcrumb {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .breadcrumb a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* SECTION COMMON */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    /* BUILDER CARDS */
+    .builders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .builder-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .builder-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    .builder-logo {
+      margin-bottom: 16px;
+    }
+    .builder-card h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .builder-card .builder-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .builder-stats {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      font-size: 0.82rem;
+      color: var(--text);
+    }
+    .builder-stats span {
+      background: var(--bg-alt);
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+    .project-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .project-pill {
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: var(--accent-light);
+      color: #92400e;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .project-pill:hover {
+      background: #fde68a;
+    }
+    .builder-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      padding-bottom: 2px;
+      border-bottom: 2px solid var(--accent);
+      transition: opacity 0.2s;
+    }
+    .builder-cta:hover { opacity: 0.75; }
+
+    /* WHY PARTNER */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .why-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .why-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .why-icon { font-size: 2rem; margin-bottom: 14px; }
+    .why-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .why-card p { font-size: 0.9rem; color: var(--muted); }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: linear-gradient(135deg, #fef3c7 0%, #fff7ed 100%);
+      border-top: 1px solid #fde68a;
+      border-bottom: 1px solid #fde68a;
+      text-align: center;
+    }
+    .cta-section .section-title { color: var(--primary); }
+    .cta-section p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 500px;
+      margin: 0 auto 32px;
+    }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, opacity 0.2s;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+    }
+    .whatsapp-btn:hover { transform: translateY(-2px); opacity: 0.92; }
+    .whatsapp-icon { width: 22px; height: 22px; fill: white; }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer .footer-logo {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 8px;
+    }
+    footer .footer-logo span { color: var(--accent); }
+    .footer-social { display: flex; justify-content: center; gap: 14px; margin: 12px 0; flex-wrap: wrap; }
+    .footer-social a { display: inline-flex; align-items: center; gap: 7px; color: rgba(255,255,255,.6); font-size: .82rem; font-weight: 500; padding: 7px 16px; border-radius: 100px; border: 1px solid rgba(255,255,255,.15); transition: all .2s; }
+    .footer-social a:hover { color: #fff; border-color: rgba(255,255,255,.45); background: rgba(255,255,255,.07); }
+
+    /* FLOATING WHATSAPP */
+    .floating-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      z-index: 99;
+      transition: transform 0.2s;
+    }
+    .floating-wa:hover { transform: scale(1.1); }
+    .floating-wa svg { width: 28px; height: 28px; fill: white; }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .hero { padding: 120px 20px 60px; }
+      section { padding: 60px 20px; }
+      .nav-links { display: none !important; }
+      .builders-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">Launch<span>Portal</span>.in</a>
+      <div class="nav-links" style="display:flex;gap:18px;font-size:.85rem;font-weight:500;">
+        <a href="/m3m/" style="color:var(--muted);text-decoration:none;">M3M</a>
+        <a href="/dlf/" style="color:var(--muted);text-decoration:none;">DLF</a>
+        <a href="/godrej/" style="color:var(--muted);text-decoration:none;">Godrej</a>
+        <a href="/elan/" style="color:var(--muted);text-decoration:none;">Elan</a>
+        <a href="/signatureglobal/" style="color:var(--muted);text-decoration:none;">Signature Global</a>
+        <a href="/gangarealty/" style="color:var(--muted);text-decoration:none;">Ganga Realty</a>
+      </div>
+      <a href="https://wa.me/918377033060?text=Hi%2C%20I%20found%20LaunchPortal.in%20and%20want%20to%20know%20more" class="nav-cta" target="_blank" rel="noopener">Chat with Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Channel Partners</div>
+    <h1>Our Builder Partners</h1>
+    <p>We are authorized channel partners for India's leading real estate developers. This means you get verified pricing, priority booking, and expert guidance — at zero brokerage.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <strong>6</strong>
+        <span>Builder Partners</span>
+      </div>
+      <div class="hero-stat">
+        <strong>24+</strong>
+        <span>Active Projects</span>
+      </div>
+      <div class="hero-stat">
+        <strong>₹60L – ₹19Cr</strong>
+        <span>Price Range</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="/">Home</a> &nbsp;&rsaquo;&nbsp; Our Partners
+  </div>
+
+  <!-- BUILDER CARDS -->
+  <section style="background:var(--bg-alt);">
+    <div class="section-inner">
+      <p class="section-label">Our Partners</p>
+      <h2 class="section-title">India's Leading Developers, One Platform</h2>
+      <p class="section-sub">Direct channel partnerships mean verified pricing, priority allotment, and zero brokerage for you.</p>
+
+      <div class="builders-grid">
+
+        <!-- M3M -->
+        <div class="builder-card">
+          <div class="builder-logo">
+            <svg width="90" height="40" viewBox="0 0 90 40" aria-hidden="true"><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="24" fill="#0f172a">M3M</text></svg>
+          </div>
+          <h2>M3M India</h2>
+          <p class="builder-desc">Premium luxury developer in Gurugram. Known for iconic residential and commercial properties with world-class amenities.</p>
+          <div class="builder-stats">
+            <span>9 Projects</span>
+            <span>₹1.80 Cr – ₹8 Cr</span>
+            <span>Sec 65, 79, 113, Golf Course Ext</span>
+          </div>
+          <div class="project-pills">
+            <a href="/m3m/65th-avenue/" class="project-pill">65th Avenue</a>
+            <a href="/m3m/altitude/" class="project-pill">Altitude</a>
+            <a href="/m3m/antalya-hills/" class="project-pill">Antalya Hills</a>
+            <a href="/m3m/capital/" class="project-pill">Capital</a>
+            <a href="/m3m/golf-estate/" class="project-pill">Golf Estate</a>
+            <a href="/m3m/golf-hills/" class="project-pill">Golf Hills</a>
+            <a href="/m3m/mansion/" class="project-pill">Mansion</a>
+            <a href="/m3m/merlin/" class="project-pill">Merlin</a>
+            <a href="/m3m/sector-58/" class="project-pill">Sector 58</a>
+          </div>
+          <a href="/m3m/" class="builder-cta">View All Projects &rarr;</a>
+        </div>
+
+        <!-- DLF -->
+        <div class="builder-card">
+          <div class="builder-logo">
+            <svg width="90" height="40" viewBox="0 0 90 40" aria-hidden="true"><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="24" fill="#0f172a">DLF</text></svg>
+          </div>
+          <h2>DLF Ltd</h2>
+          <p class="builder-desc">India's largest listed real estate company. Over 30 years of excellence with 150+ million sq.ft. developed across residential and commercial segments.</p>
+          <div class="builder-stats">
+            <span>3 Projects</span>
+            <span>₹3.50 Cr – ₹19 Cr</span>
+            <span>Sectors 63, 77</span>
+          </div>
+          <div class="project-pills">
+            <a href="/dlf/privana-south/" class="project-pill">Privana South</a>
+            <a href="/dlf/privana-west/" class="project-pill">Privana West</a>
+            <a href="/dlf/the-arbour/" class="project-pill">The Arbour</a>
+          </div>
+          <a href="/dlf/" class="builder-cta">View All Projects &rarr;</a>
+        </div>
+
+        <!-- Godrej -->
+        <div class="builder-card">
+          <div class="builder-logo">
+            <svg width="90" height="40" viewBox="0 0 90 40" aria-hidden="true"><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="18" fill="#0f172a">GODREJ</text></svg>
+          </div>
+          <h2>Godrej Properties</h2>
+          <p class="builder-desc">Part of the 127-year-old Godrej Group. Pioneer in sustainable development with award-winning residential communities.</p>
+          <div class="builder-stats">
+            <span>3 Projects</span>
+            <span>₹1.20 Cr – ₹5.10 Cr</span>
+            <span>Sectors 49, 79, 89</span>
+          </div>
+          <div class="project-pills">
+            <a href="/godrej/aria/" class="project-pill">Aria</a>
+            <a href="/godrej/zenith/" class="project-pill">Zenith</a>
+            <a href="/godrej/aristocrat/" class="project-pill">Aristocrat</a>
+          </div>
+          <a href="/godrej/" class="builder-cta">View All Projects &rarr;</a>
+        </div>
+
+        <!-- Elan -->
+        <div class="builder-card">
+          <div class="builder-logo">
+            <svg width="90" height="40" viewBox="0 0 90 40" aria-hidden="true"><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="22" fill="#0f172a">ELAN</text></svg>
+          </div>
+          <h2>Elan Group</h2>
+          <p class="builder-desc">Premium commercial and residential developer on Dwarka Expressway. Known for luxury retail and high-end apartments.</p>
+          <div class="builder-stats">
+            <span>3 Projects</span>
+            <span>₹80 Lac – ₹4.80 Cr</span>
+            <span>Sectors 66, 67, 106</span>
+          </div>
+          <div class="project-pills">
+            <a href="/elan/the-presidential/" class="project-pill">The Presidential</a>
+            <a href="/elan/empire/" class="project-pill">Empire</a>
+            <a href="/elan/town-centre/" class="project-pill">Town Centre</a>
+          </div>
+          <a href="/elan/" class="builder-cta">View All Projects &rarr;</a>
+        </div>
+
+        <!-- Signature Global -->
+        <div class="builder-card">
+          <div class="builder-logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" aria-hidden="true"><text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="13" fill="#0f172a">SIGNATURE</text><text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="13" fill="#0f172a">GLOBAL</text></svg>
+          </div>
+          <h2>Signature Global</h2>
+          <p class="builder-desc">India's leading affordable luxury developer. BSE &amp; NSE listed with a strong track record of on-time delivery.</p>
+          <div class="builder-stats">
+            <span>3 Projects</span>
+            <span>₹60 Lac – ₹1.40 Cr</span>
+            <span>Sec 37D, 81, Sohna</span>
+          </div>
+          <div class="project-pills">
+            <a href="/signatureglobal/sector-81-gurgaon/" class="project-pill">Sector 81 Gurgaon</a>
+            <a href="/signatureglobal/city-37d/" class="project-pill">City 37D</a>
+            <a href="/signatureglobal/sector-4-sohna/" class="project-pill">Sector 4 Sohna</a>
+          </div>
+          <a href="/signatureglobal/" class="builder-cta">View All Projects &rarr;</a>
+        </div>
+
+        <!-- Ganga Realty -->
+        <div class="builder-card">
+          <div class="builder-logo">
+            <svg width="90" height="40" viewBox="0 0 90 40" aria-hidden="true"><text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="14" fill="#0f172a">GANGA</text><text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="14" fill="#0f172a">REALTY</text></svg>
+          </div>
+          <h2>Ganga Realty</h2>
+          <p class="builder-desc">Premium residential developer delivering luxury apartments in Gurugram. Known for quality construction and timely possession.</p>
+          <div class="builder-stats">
+            <span>2 Projects</span>
+            <span>₹3.60 Cr – ₹6 Cr</span>
+            <span>Sectors 85, 84</span>
+          </div>
+          <div class="project-pills">
+            <a href="/gangarealty/anantam-85/" class="project-pill">Anantam 85</a>
+            <a href="/gangarealty/nandaka/" class="project-pill">Nandaka</a>
+          </div>
+          <a href="/gangarealty/" class="builder-cta">View All Projects &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PARTNER WITH US -->
+  <section>
+    <div class="section-inner">
+      <p class="section-label">Why Partner With Us</p>
+      <h2 class="section-title">The LaunchPortal Advantage</h2>
+      <p class="section-sub">As authorized channel partners, we offer you benefits that individual buyers don't get.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Zero Brokerage for Buyers</h3>
+          <p>We are paid by the builders, not by you. Your total cost stays exactly what the builder charges — no hidden fees.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>Verified Pricing Directly from Builder</h3>
+          <p>No inflated quotes or middleman markups. Every price we share is the official builder rate with applicable offers.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎯</div>
+          <h3>Priority Booking &amp; Best Unit Selection</h3>
+          <p>As channel partners, we get early access to inventory. You get first pick of the best floors, views, and units.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🧭</div>
+          <h3>Expert Guidance from Start to Possession</h3>
+          <p>From shortlisting to agreement signing to possession — our team guides you through every step of the journey.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🏦</div>
+          <h3>Home Loan Assistance with Top Banks</h3>
+          <p>We connect you with pre-approved home loan offers from SBI, HDFC, ICICI, and other leading banks at best rates.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🚗</div>
+          <h3>Free Site Visits 7 Days a Week</h3>
+          <p>Schedule a visit any day of the week. We arrange cab pickups, accompany you on-site, and answer all your questions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="section-inner">
+      <p class="section-label">Get Started</p>
+      <h2 class="section-title">Ready to Explore a Project?</h2>
+      <p>Tell us your budget and preferred location. We'll share verified pricing and help you book the best unit — at zero brokerage.</p>
+      <a href="https://wa.me/918377033060?text=Hi%20LaunchPortal!%20I%20saw%20your%20builder%20partners%20page%20and%20I%27m%20interested%20in%20exploring%20a%20project.%20Can%20you%20help%3F" class="whatsapp-btn" target="_blank" rel="noopener">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Chat with Us on WhatsApp
+      </a>
+      <p style="margin-top: 16px; font-size: 0.82rem; color: var(--muted);">Or call us directly: <a href="tel:08377033060" style="color:var(--accent);font-weight:600;">08377033060</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Launch<span>Portal</span>.in</div>
+    <p style="margin-bottom: 8px;">Your property partner across India. Not an agent, never a spammer.</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/launchportal.in" target="_blank" rel="noopener" aria-label="Follow LaunchPortal.in on Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <span>@launchportal.in</span>
+      </a>
+      <a href="https://wa.me/918377033060" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>WhatsApp Us</span>
+      </a>
+    </div>
+    <p>&copy; 2025 LaunchPortal.in &nbsp;&middot;&nbsp; <a href="https://wa.me/918377033060">WhatsApp Us</a></p>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/918377033060?text=Hi%2C%20I%20am%20interested%20in%20a%20property.%20Can%20you%20help%3F" class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
